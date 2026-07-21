@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Dust extinction illustration</title>
+  <desc id="desc">Bright multiwavelength starlight passes through a dust cloud and emerges dimmer and redder.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop stop-color="#0b2138"/><stop offset="1" stop-color="#132f43"/>
+    </linearGradient>
+    <radialGradient id="star">
+      <stop stop-color="#ffffff"/><stop offset=".18" stop-color="#fff9d7"/><stop offset=".55" stop-color="#69d3cc" stop-opacity=".8"/><stop offset="1" stop-color="#69d3cc" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="cloud"><feTurbulence type="fractalNoise" baseFrequency=".018" numOctaves="3" seed="8"/><feColorMatrix values="0 0 0 0 .32 0 0 0 0 .24 0 0 0 0 .2 0 0 0 .78 0"/></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="145" cy="250" r="118" fill="url(#star)"/>
+  <g stroke-width="12" stroke-linecap="round" opacity=".9">
+    <path d="M212 191H585" stroke="#5aa8ff"/><path d="M212 222H585" stroke="#68d2db"/>
+    <path d="M212 253H585" stroke="#f4e272"/><path d="M212 284H585" stroke="#f4a75e"/>
+    <path d="M212 315H585" stroke="#e66b5f"/>
+  </g>
+  <rect x="345" y="82" width="210" height="336" rx="94" filter="url(#cloud)" opacity=".92"/>
+  <g stroke-width="12" stroke-linecap="round">
+    <path d="M558 191H728" stroke="#5aa8ff" opacity=".2"/><path d="M558 222H728" stroke="#68d2db" opacity=".32"/>
+    <path d="M558 253H728" stroke="#f4e272" opacity=".58"/><path d="M558 284H728" stroke="#f4a75e" opacity=".78"/>
+    <path d="M558 315H728" stroke="#e66b5f" opacity=".92"/>
+  </g>
+  <g fill="#dff6f4" font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="146" y="430" font-size="22" font-weight="700">source</text>
+    <text x="450" y="462" font-size="22" font-weight="700">dust</text>
+    <text x="650" y="430" font-size="22" font-weight="700">reddened light</text>
+  </g>
+</svg>
