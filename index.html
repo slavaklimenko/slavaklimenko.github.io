@@ -3,268 +3,426 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Academic homepage of Slava Klimenko: astrophysics research, software, publications, and contact information.">
-  <meta name="theme-color" content="#0b2138">
-  <title>Slava Klimenko | Astrophysics</title>
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="author" content="Viacheslav Klimenko">
+  <meta name="description" content="Academic homepage of Viacheslav Klimenko, an astrophysicist studying interstellar and circumgalactic gas, dust, and galaxy evolution through absorption-line and integral-field spectroscopy.">
+  <meta name="theme-color" content="#101827">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Viacheslav Klimenko | Astrophysicist">
+  <meta property="og:description" content="Research on gas and dust in the interstellar and circumgalactic media of nearby and distant galaxies.">
+  <meta property="og:url" content="https://slavaklimenko.github.io/">
+  <title>Viacheslav Klimenko | Astrophysicist</title>
+  <link rel="canonical" href="https://slavaklimenko.github.io/">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
   <script defer src="assets/js/main.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Viacheslav Klimenko",
+    "alternateName": "Slava Klimenko",
+    "jobTitle": "Postdoctoral Fellow",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of South Carolina"
+    },
+    "email": "mailto:klimenkv@mailbox.sc.edu",
+    "sameAs": [
+      "https://github.com/slavaklimenko",
+      "https://orcid.org/0000-0001-6730-2917"
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <button class="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">
-    <span class="sr-only">Open navigation</span>
-    <span></span><span></span><span></span>
-  </button>
+  <aside class="sidebar" aria-label="Site navigation">
+    <div class="identity">
+      <a class="monogram" href="#welcome" aria-label="Go to the top">VK</a>
+      <p class="eyebrow">Academic homepage</p>
+      <h1>Viacheslav Klimenko</h1>
+      <p class="roles">Postdoctoral Fellow<br>Interstellar and circumgalactic media</p>
+    </div>
 
-  <aside class="sidebar" id="sidebar" aria-label="Site navigation">
-    <div class="sidebar-inner">
-      <a class="identity" href="#welcome" aria-label="Go to welcome section">
-        <img class="portrait"  src="assets/img/profile.jpg"  alt="Portrait of Slava Klimenko">
-        <span class="identity-name">Slava Klimenko</span>
-        <span class="identity-role">Astrophysics Researcher</span>
-        <span class="identity-affiliation">University of South Carolina</span>
-      </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="#welcome">Welcome</a>
+      <a class="nav-link" href="#research">Research</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#software">Software</a>
+      <a class="nav-link" href="#background">CV</a>
+      <a class="nav-link" href="#publications">Publications</a>
+      <a class="nav-link" href="#contact">Get in touch</a>
+    </nav>
 
-      <nav class="site-nav" aria-label="Primary">
-        <a class="nav-link active" href="#welcome">Welcome</a>
-        <a class="nav-link" href="#research">Research</a>
-        <a class="nav-link" href="#software">Software &amp; data</a>
-        <a class="nav-link" href="#publications">Publications</a>
-        <a class="nav-link" href="#contact">Get in touch</a>
-      </nav>
-
-      <div class="social-links" aria-label="Professional profiles">
-        <!-- EDIT: Replace # with your real profile links. -->
-        <a href="https://github.com/slavaklimenko" aria-label="GitHub profile">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.37-3.9-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.19 1.78 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.57-.29-5.27-1.29-5.27-5.73 0-1.27.45-2.3 1.19-3.12-.12-.29-.52-1.48.11-3.08 0 0 .97-.31 3.16 1.19a10.9 10.9 0 0 1 5.76 0c2.2-1.5 3.16-1.19 3.16-1.19.63 1.6.23 2.79.11 3.08.74.82 1.19 1.85 1.19 3.12 0 4.45-2.71 5.43-5.29 5.72.42.36.79 1.06.79 2.14v3.18c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/></svg>
-        </a>
-        <a href="#" aria-label="ORCID profile">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11"/><path class="icon-cutout" d="M7.3 6.6h1.5v1.5H7.3V6.6Zm0 3h1.5v7.8H7.3V9.6Zm3.7-3h3.6c3.7 0 5.4 2.6 5.4 5.4s-1.7 5.4-5.4 5.4H11V6.6Zm1.5 1.5v7.8h2c2.7 0 3.9-1.8 3.9-3.9s-1.2-3.9-3.9-3.9h-2Z"/></svg>
-        </a>
-        <a href="#" aria-label="Google Scholar profile">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 1.5 8l4 2.3v5.4L12 19.5l6.5-3.8v-5.4L22.5 8 12 2Zm0 2.2L18.7 8 12 11.8 5.3 8 12 4.2Zm-4.5 7.2 4.5 2.6 4.5-2.6v3.2L12 17.2l-4.5-2.6v-3.2Z"/></svg>
-        </a>
-        <a href="mailto:your.email@example.com" aria-label="Send email">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.4l9 5.7 9-5.7V7H3Zm18 10V9.8l-9 5.7-9-5.7V17h18Z"/></svg>
-        </a>
+    <div class="sidebar-footer">
+      <div class="social-links" aria-label="Profile links">
+        <a href="https://github.com/slavaklimenko" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Klimenko%2C%20V.%20V.%22" target="_blank" rel="noreferrer">NASA ADS</a>
+        <a href="https://orcid.org/0000-0001-6730-2917" target="_blank" rel="noreferrer">ORCID</a>
+        <a href="mailto:klimenkv@mailbox.sc.edu">Email</a>
       </div>
-
-      <p class="sidebar-note">Built for GitHub Pages</p>
+      <p>&copy; <span id="year"></span> Viacheslav Klimenko</p>
     </div>
   </aside>
 
   <main id="main-content">
-    <section class="section hero" id="welcome" aria-labelledby="welcome-title">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Astrophysics · Spectral modeling · Open science</p>
-        <h1 id="welcome-title">Exploring energetic galaxies through their light.</h1>
-        <p class="hero-lead">
-          I study how radiation, particles, magnetic fields, and dust shape the spectra of active galaxies and quasars.
-          My work combines physical modeling, statistical inference, and reproducible scientific software.
-        </p>
+    <section id="welcome" class="hero section-dark" aria-labelledby="welcome-heading">
+      <div class="star-field" aria-hidden="true"></div>
+      <div class="section-inner hero-grid">
+        <div class="hero-copy reveal">
+          <p class="kicker">Gas · dust · galaxies across cosmic time</p>
+          <h2 id="welcome-heading">Tracing the matter between the stars and around galaxies.</h2>
+          <p class="lead">
+            I investigate the physical and chemical properties of interstellar and circumgalactic gas and dust
+            in nearby and distant galaxies using absorption-line spectroscopy, integral-field observations,
+            and physical modeling.
+          </p>
+          <div class="button-row">
+            <a class="button button-primary" href="#research">Explore my research</a>
+            <a class="button button-ghost" href="#publications">Selected papers</a>
+            <a class="button button-ghost" href="#background">Academic background</a>
+          </div>
+        </div>
+
+        <div class="profile-card reveal">
+          <img src="assets/images/profile-placeholder.svg" alt="Abstract profile illustration for Viacheslav Klimenko">
+          <div>
+            <h3>Viacheslav Klimenko</h3>
+            <p>
+              I am a Postdoctoral Fellow in the Department of Physics and Astronomy at the University of South Carolina.
+              My work connects quasar and stellar absorption spectroscopy with imaging and integral-field spectroscopy
+              from the ultraviolet to the mid-infrared.
+            </p>
+            <dl class="quick-facts">
+              <div><dt>Position</dt><dd>Postdoctoral Fellow</dd></div>
+              <div><dt>Institution</dt><dd>University of South Carolina</dd></div>
+              <div><dt>Research</dt><dd>ISM, CGM, dust, and galaxy evolution</dd></div>
+              <div><dt>Record</dt><dd>24 refereed papers; 12 awarded observing programs</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section-light" aria-labelledby="research-heading">
+      <div class="section-inner">
+        <header class="section-heading reveal">
+          <p class="eyebrow">Research</p>
+          <h2 id="research-heading">Gas and dust as tracers of galaxy evolution</h2>
+          <p>
+            I use background stars and quasars as bright beacons to measure material that is difficult to detect in emission,
+            then combine those measurements with spatially resolved observations of the associated galaxies.
+          </p>
+        </header>
+
+        <div class="card-grid research-grid">
+          <article class="feature-card reveal">
+            <span class="card-number">01</span>
+            <h3>Molecular gas in the early Universe</h3>
+            <p>
+              I study H<sub>2</sub>, CO, and neutral carbon absorption in damped Lyα systems at
+              <i>z</i> ≈ 2–3. Excitation modeling constrains gas temperature, density, ultraviolet radiation,
+              chemical enrichment, and the cosmic microwave background temperature.
+            </p>
+            <a class="text-link" href="#publications">Related publications <span aria-hidden="true">&rarr;</span></a>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="card-number">02</span>
+            <h3>The baryon cycle around galaxies</h3>
+            <p>
+              By combining HST/COS quasar absorption spectra with SDSS/MaNGA integral-field maps, I connect cold
+              circumgalactic gas to galaxy rotation, metallicity gradients, star formation, and the flow of material
+              into and out of galaxies.
+            </p>
+            <a class="text-link" href="#projects">Current surveys <span aria-hidden="true">&rarr;</span></a>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="card-number">03</span>
+            <h3>Dust composition and extinction</h3>
+            <p>
+              I use JWST mid-infrared spectroscopy and ultraviolet-to-near-infrared data to measure extinction curves,
+              the 2175 Å carbonaceous feature, and silicate and ice absorption in galaxies at
+              <i>z</i> ≈ 0.1–1.3.
+            </p>
+            <a class="text-link" href="#projects">JWST programs <span aria-hidden="true">&rarr;</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-muted" aria-labelledby="projects-heading">
+      <div class="section-inner">
+        <header class="section-heading reveal">
+          <p class="eyebrow">Projects &amp; observing programs</p>
+          <h2 id="projects-heading">Current and recent work</h2>
+          <p>
+            My research combines targeted observations, large archival samples, and collaborations across space- and
+            ground-based facilities.
+          </p>
+        </header>
+
+        <div class="project-list">
+          <article class="project-card reveal">
+            <div class="project-meta"><span>HST/COS + SDSS/MaNGA</span><span>Current</span></div>
+            <h3>Cold circumgalactic gas around nearby galaxies</h3>
+            <p>
+              This survey measures H&nbsp;I and metal absorption around galaxies at <i>z</i> = 0.02–0.1 and compares it with
+              resolved MaNGA maps of stellar and gas kinematics, star formation, and chemical abundance. A pilot sample
+              showed co-rotation between the inner CGM and galaxy disks and metallicities consistent with disk gradients;
+              the expanded sample targets roughly 50 systems within the virial radius.
+            </p>
+            <ul class="tag-list" aria-label="Project topics">
+              <li>HST/COS</li><li>MaNGA</li><li>CGM</li><li>Galaxy kinematics</li><li>Metallicity</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-meta"><span>JWST/MIRI MRS</span><span>Cycles 1 &amp; 3</span></div>
+            <h3>Dust, ice, and molecules in distant galaxies</h3>
+            <p>
+              Four JWST programs use background quasars at impact parameters of 1–20 kpc to probe dust in normal galaxies.
+              The analysis combines MIRI spectroscopy with GALEX, optical spectroscopy, and near-infrared photometry to
+              measure silicate and ice features, extinction curves, grain composition, structure, and size distribution.
+            </p>
+            <ul class="tag-list" aria-label="Project topics">
+              <li>JWST</li><li>Dust extinction</li><li>Silicates</li><li>Ice features</li><li>Quasar sightlines</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-meta"><span>Archival IFU survey</span><span><i>z</i> ≈ 0.8–6</span></div>
+            <h3>Host galaxies of strong neutral-gas absorbers</h3>
+            <p>
+              A several-hundred-system survey brings together KCWI and OSIRIS on Keck; MUSE and SINFONI on the VLT;
+              Gemini/GMOS; ALMA; and JWST/NIRSpec and MIRI observations. The goal is to identify and characterize the
+              galaxies associated with strong damped Lyα absorbers across cosmic time.
+            </p>
+            <ul class="tag-list" aria-label="Project topics">
+              <li>DLA hosts</li><li>Integral-field spectroscopy</li><li>Neutral gas</li><li>Galaxy evolution</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-meta"><span>VLT + Keck</span><span>2026 programs</span></div>
+            <h3>Multiwavelength extinction and precision molecular spectroscopy</h3>
+            <p>
+              Current observing programs include the VLT/X-shooter SUENO survey of unexplored extinction in normal
+              galaxies and the Keck/NIRES PRISM survey of reddening in intervening silicate-dust systems. Related
+              VLT/ESPRESSO work uses ultra-high-resolution molecular absorption to study isotopic abundances,
+              chemical evolution, and fundamental cosmology at cosmic noon.
+            </p>
+            <ul class="tag-list" aria-label="Project topics">
+              <li>VLT/X-shooter</li><li>Keck/NIRES</li><li>VLT/ESPRESSO</li><li>Extinction</li><li>CO</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="software" class="section-light" aria-labelledby="software-heading">
+      <div class="section-inner">
+        <header class="section-heading reveal">
+          <p class="eyebrow">Software</p>
+          <h2 id="software-heading">Open and reproducible analysis</h2>
+          <p>
+            I develop public Python tools for dust-extinction modeling and for deriving physical conditions in the
+            interstellar medium. Research code and ongoing projects are available through GitHub.
+          </p>
+        </header>
+
+        <div class="card-grid software-grid">
+          <article class="software-card reveal">
+            <div class="software-icon" aria-hidden="true">DE</div>
+            <h3>Dust-extinction modeling</h3>
+            <p>
+              Tools for fitting ultraviolet-to-infrared extinction curves and comparing carbonaceous, silicate,
+              and ice absorption signatures across galaxy environments.
+            </p>
+            <div class="inline-links"><a href="https://github.com/slavaklimenko" target="_blank" rel="noreferrer">Browse GitHub</a></div>
+          </article>
+
+          <article class="software-card reveal">
+            <div class="software-icon" aria-hidden="true">ISM</div>
+            <h3>ISM physical-condition analysis</h3>
+            <p>
+              Modeling of H<sub>2</sub> and CO rotational excitation and C&nbsp;I fine-structure populations to infer
+              temperature, density, ultraviolet radiation intensity, and related physical quantities.
+            </p>
+            <div class="inline-links"><a href="https://github.com/slavaklimenko" target="_blank" rel="noreferrer">View repositories</a></div>
+          </article>
+
+          <article class="software-card reveal">
+            <div class="software-icon" aria-hidden="true">SP</div>
+            <h3>Spectroscopic workflows</h3>
+            <p>
+              Reproducible workflows for absorption-line measurements, multiwavelength continuum analysis,
+              model comparison, and publication-ready figures.
+            </p>
+            <div class="inline-links"><a href="https://github.com/slavaklimenko" target="_blank" rel="noreferrer">Research code</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="background" class="section-muted" aria-labelledby="background-heading">
+      <div class="section-inner">
+        <header class="section-heading reveal">
+          <p class="eyebrow">Curriculum vitae</p>
+          <h2 id="background-heading">Appointments, education, and service</h2>
+          <p>
+            My background combines observational astrophysics, physical modeling, teaching, mentoring, and
+            international collaboration.
+          </p>
+        </header>
+
+        <div class="project-list">
+          <article class="project-card reveal">
+            <div class="project-meta"><span>Appointments</span><span>2011–present</span></div>
+            <h3>Research and academic positions</h3>
+            <p>
+              <strong>Postdoctoral Fellow</strong>, University of South Carolina, 2022–present.<br>
+              <strong>Research Scientist</strong>, Ioffe Institute, 2016–2022.<br>
+              <strong>Assistant Professor</strong>, St. Petersburg Academic University, 2016–2021.<br>
+              <strong>Junior Research Scientist</strong>, Ioffe Institute, 2011–2016.
+            </p>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-meta"><span>Education</span><span>2009–2016</span></div>
+            <h3>Physics and astrophysics training</h3>
+            <p>
+              <strong>Ph.D. in Astronomy &amp; Astrophysics</strong>, Ioffe Institute, 2016.<br>
+              <strong>M.Sc. in Theoretical Physics</strong>, St. Petersburg Academic University, 2011.<br>
+              <strong>B.Sc. in Physics</strong>, Peter the Great St. Petersburg Polytechnic University, 2009.
+            </p>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-meta"><span>Teaching &amp; mentoring</span><span>Ongoing</span></div>
+            <h3>Training the next generation</h3>
+            <p>
+              I have taught introductory astronomy, statistical mechanics, modern astronomy, and general physics.
+              My mentoring includes three graduate students and four undergraduate students in the United States
+              and Russia.
+            </p>
+            <ul class="tag-list" aria-label="Teaching topics">
+              <li>Introduction to Astronomy</li><li>Statistical Mechanics</li><li>Modern Astronomy</li><li>General Physics</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-meta"><span>Recognition &amp; outreach</span><span>Community</span></div>
+            <h3>Awards, reviewing, and public engagement</h3>
+            <p>
+              My work received best-scientific-work awards from <em>Astronomy Letters</em> and the Ioffe Institute.
+              I referee for major astronomy journals and participate in public lectures, Astronomy on Tap,
+              STEM fairs, state-fair physics events, and Discover USC.
+            </p>
+          </article>
+        </div>
+
         <div class="button-row">
-          <a class="button primary" href="#research">Explore my research</a>
-          <a class="button secondary" href="#publications">See publications</a>
-        </div>
-        <dl class="focus-list" aria-label="Research summary">
-          <div><dt>Objects</dt><dd>AGN, quasars, and relativistic jets</dd></div>
-          <div><dt>Methods</dt><dd>SED fitting, MCMC, and radiative processes</dd></div>
-          <div><dt>Tools</dt><dd>Python, Astropy, NumPy, SciPy</dd></div>
-        </dl>
-      </div>
-
-      <div class="hero-art reveal" aria-label="Stylized illustration of an active galactic nucleus">
-        <img src="assets/img/agn-jet.svg" alt="Illustration of an accretion disk with two relativistic jets">
-        <div class="hero-caption">
-          <span class="caption-kicker">Current focus</span>
-          <strong>Connecting synchrotron, SSC, and dust-attenuated emission</strong>
+          <a class="button button-primary" href="mailto:klimenkv@mailbox.sc.edu?subject=Curriculum%20Vitae%20request">Request full CV</a>
+          <a class="button button-outline" href="#research">Read research overview</a>
         </div>
       </div>
     </section>
 
-    <section class="section intro-section" aria-labelledby="about-title">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Welcome</p>
-        <h2 id="about-title">About my work</h2>
-      </div>
-      <div class="prose reveal">
-        <p>
-          <!-- EDIT: Replace this paragraph with your biography. -->
-          I am an astrophysics researcher interested in extracting physical information from broadband astronomical spectra.
-          I build models that connect observations across radio, infrared, optical, X-ray, and gamma-ray wavelengths.
-        </p>
-        <p>
-          This starter site is intentionally simple: every section is contained in one HTML file, it requires no build system,
-          and it can be published directly from the root of a GitHub Pages repository.
-        </p>
-      </div>
-    </section>
+    <section id="publications" class="section-dark section-publications" aria-labelledby="publications-heading">
+      <div class="section-inner">
+        <header class="section-heading reveal">
+          <p class="eyebrow">Publications</p>
+          <h2 id="publications-heading">Selected papers</h2>
+          <p>
+            Selected work spans dust composition, molecular excitation, circumgalactic gas, and the physical conditions
+            of the interstellar medium. My CV lists 24 refereed manuscripts, including 13 first-author papers.
+          </p>
+        </header>
 
-    <section class="section tinted" id="research" aria-labelledby="research-title">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Research</p>
-        <h2 id="research-title">Questions I work on</h2>
-        <p>Replace these sample topics with your own projects, collaborations, and results.</p>
-      </div>
-
-      <div class="research-grid">
-        <article class="research-card reveal">
-          <img src="assets/img/spectrum.svg" alt="Two-peaked spectral energy distribution illustration">
-          <div class="card-body">
-            <p class="card-number">01</p>
-            <h3>Broadband emission from relativistic jets</h3>
-            <p>
-              Modeling synchrotron and inverse-Compton radiation to constrain particle populations,
-              magnetic fields, source size, and Doppler boosting.
-            </p>
-            <a class="text-link" href="#publications">Related publications <span aria-hidden="true">→</span></a>
-          </div>
-        </article>
-
-        <article class="research-card reveal">
-          <img src="assets/img/dust-extinction.svg" alt="Starlight passing through an interstellar dust cloud">
-          <div class="card-body">
-            <p class="card-number">02</p>
-            <h3>Dust extinction and reddening</h3>
-            <p>
-              Studying how dust changes observed continua and emission features, and applying wavelength-dependent
-              attenuation laws consistently in spectral models.
-            </p>
-            <a class="text-link" href="#software">Methods and code <span aria-hidden="true">→</span></a>
-          </div>
-        </article>
-
-        <article class="research-card reveal">
-          <div class="code-visual" role="img" aria-label="Abstract visualization of Bayesian parameter inference">
-            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-          </div>
-          <div class="card-body">
-            <p class="card-number">03</p>
-            <h3>Bayesian inference for physical models</h3>
-            <p>
-              Using MCMC and posterior diagnostics to quantify model parameters, degeneracies, and uncertainties
-              rather than relying only on a single best fit.
-            </p>
-            <a class="text-link" href="#software">View software <span aria-hidden="true">→</span></a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="software" aria-labelledby="software-title">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Software &amp; data</p>
-        <h2 id="software-title">Reproducible research tools</h2>
-        <p>Highlight public repositories, data releases, notebooks, or analysis pipelines here.</p>
-      </div>
-
-      <div class="project-list">
-        <article class="project reveal">
-          <div class="project-icon" aria-hidden="true">Py</div>
-          <div>
-            <div class="project-heading">
-              <h3>SED modeling toolkit</h3>
-              <span class="status">Example project</span>
+        <ol class="publication-list">
+          <li class="publication reveal">
+            <span class="pub-year">2026</span>
+            <div>
+              <h3>Probing Dust Composition in Distant Galaxies with JWST Mid-IR Spectroscopy of Quasars with Foreground 2175 Å Absorbers II: Measurements of Grain Composition and Extinction Properties</h3>
+              <p><strong>V. V. Klimenko</strong>, V. P. Kulkarni, and M. C. Aller</p>
+              <p class="journal">The Astrophysical Journal, 1003, 129</p>
+              <div class="inline-links"><a href="https://doi.org/10.3847/1538-4357/ae5659" target="_blank" rel="noreferrer">DOI</a><a href="https://arxiv.org/abs/2603.25034" target="_blank" rel="noreferrer">arXiv</a></div>
             </div>
-            <p>A Python workflow for constructing continua, applying extinction, interpolating spectra, and comparing models with data.</p>
-            <ul class="tag-list" aria-label="Technologies">
-              <li>Python</li><li>Astropy</li><li>SciPy</li><li>emcee</li>
-            </ul>
-            <!-- EDIT: Replace # with the repository URL. -->
-            <a class="text-link" href="#">Open repository <span aria-hidden="true">↗</span></a>
-          </div>
-        </article>
+          </li>
 
-        <article class="project reveal">
-          <div class="project-icon data-icon" aria-hidden="true">D</div>
-          <div>
-            <div class="project-heading">
-              <h3>Posterior sample archive</h3>
-              <span class="status">Example data</span>
+          <li class="publication reveal">
+            <span class="pub-year">2026</span>
+            <div>
+              <h3>Probing Dust Composition in Distant Galaxies with JWST Mid-IR Spectroscopy of Quasars with Foreground 2175 Å Absorbers I: Methodology</h3>
+              <p><strong>V. V. Klimenko</strong>, V. P. Kulkarni, and M. C. Aller</p>
+              <p class="journal">The Astrophysical Journal, 998, 299</p>
+              <div class="inline-links"><a href="https://doi.org/10.3847/1538-4357/ae3240" target="_blank" rel="noreferrer">DOI</a><a href="https://arxiv.org/abs/2602.09192" target="_blank" rel="noreferrer">arXiv</a></div>
             </div>
-            <p>Documented MCMC samples, parameter definitions, units, and scripts needed to reproduce figures and summary tables.</p>
-            <ul class="tag-list" aria-label="Data formats">
-              <li>NumPy</li><li>CSV</li><li>Metadata</li>
-            </ul>
-            <a class="text-link" href="#">Browse data <span aria-hidden="true">↗</span></a>
-          </div>
-        </article>
+          </li>
+
+          <li class="publication reveal">
+            <span class="pub-year">2024</span>
+            <div>
+              <h3>Excitation of CO molecules in diffuse gas over cosmic history</h3>
+              <p><strong>V. V. Klimenko</strong>, S. A. Balashev, P. Noterdaeme, R. Srianand, and A. V. Ivanchik</p>
+              <p class="journal">Monthly Notices of the Royal Astronomical Society, 533, 1367-1393</p>
+              <div class="inline-links"><a href="https://doi.org/10.1093/mnras/stae1863" target="_blank" rel="noreferrer">DOI</a></div>
+            </div>
+          </li>
+
+          <li class="publication reveal">
+            <span class="pub-year">2023</span>
+            <div>
+              <h3>The Baryonic Content of Galaxies Mapped by MaNGA and the Gas Around Them</h3>
+              <p><strong>V. V. Klimenko</strong>, V. P. Kulkarni, D. A. Wake, S. Poudel, M. A. Bershady, C. Péroux, and B. Lundgren</p>
+              <p class="journal">The Astrophysical Journal, 954, 115</p>
+              <div class="inline-links"><a href="https://doi.org/10.3847/1538-4357/ace329" target="_blank" rel="noreferrer">DOI</a><a href="https://arxiv.org/abs/2308.10992" target="_blank" rel="noreferrer">arXiv</a></div>
+            </div>
+          </li>
+
+          <li class="publication reveal">
+            <span class="pub-year">2020</span>
+            <div>
+              <h3>Physical conditions in the diffuse interstellar medium of local and high-redshift galaxies: measurements based on the excitation of H<sub>2</sub> rotational and C&nbsp;I fine-structure levels</h3>
+              <p><strong>V. V. Klimenko</strong> and S. A. Balashev</p>
+              <p class="journal">Monthly Notices of the Royal Astronomical Society, 498, 1531</p>
+              <div class="inline-links"><a href="https://doi.org/10.1093/mnras/staa2134" target="_blank" rel="noreferrer">DOI</a></div>
+            </div>
+          </li>
+        </ol>
+
+        <div class="button-row">
+          <a class="button button-primary" href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Klimenko%2C%20V.%20V.%22" target="_blank" rel="noreferrer">View publications on NASA ADS</a>
+          <a class="button button-ghost" href="mailto:klimenkv@mailbox.sc.edu?subject=Publication%20list%20request">Request full publication list</a>
+        </div>
       </div>
     </section>
 
-    <section class="section tinted" id="publications" aria-labelledby="publications-title">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Publications</p>
-        <h2 id="publications-title">Selected work</h2>
-        <p>Use this section for selected papers and link your full bibliography through ADS, ORCID, or Google Scholar.</p>
+    <section id="contact" class="section-contact" aria-labelledby="contact-heading">
+      <div class="section-inner contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Get in touch</p>
+          <h2 id="contact-heading">Let’s discuss gas, dust, and galaxies.</h2>
+          <p class="lead">
+            I welcome conversations about collaborations, observing programs, spectroscopy, dust-extinction modeling,
+            and research or mentoring opportunities.
+          </p>
+          <a class="button button-primary" href="mailto:klimenkv@mailbox.sc.edu">Send an email</a>
+        </div>
+
+        <address class="contact-card reveal">
+          <div><span>Email</span><a href="mailto:klimenkv@mailbox.sc.edu">klimenkv@mailbox.sc.edu</a></div>
+          <div><span>Affiliation</span><p>Department of Physics and Astronomy<br>University of South Carolina</p></div>
+          <div><span>Address</span><p>712 Main Street<br>Columbia, SC 29208, USA</p></div>
+          <div><span>Profiles</span><p><a href="https://github.com/slavaklimenko" target="_blank" rel="noreferrer">GitHub</a> &middot; <a href="https://orcid.org/0000-0001-6730-2917" target="_blank" rel="noreferrer">ORCID</a> &middot; <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Klimenko%2C%20V.%20V.%22" target="_blank" rel="noreferrer">NASA ADS</a></p></div>
+        </address>
       </div>
-
-      <ol class="publication-list">
-        <li class="publication reveal">
-          <div class="pub-year">2026</div>
-          <div>
-            <h3>Replace this with the title of your most important recent paper</h3>
-            <p class="authors"><strong>S. Klimenko</strong>, Collaborator A., Collaborator B.</p>
-            <p class="venue">Journal Name, volume, page · Example placeholder</p>
-            <div class="pub-links"><a href="#">ADS</a><a href="#">DOI</a><a href="#">Code</a></div>
-          </div>
-        </li>
-        <li class="publication reveal">
-          <div class="pub-year">2025</div>
-          <div>
-            <h3>A second paper title can go here</h3>
-            <p class="authors">Collaborator A., <strong>S. Klimenko</strong>, Collaborator B.</p>
-            <p class="venue">Journal Name, volume, page · Example placeholder</p>
-            <div class="pub-links"><a href="#">ADS</a><a href="#">DOI</a></div>
-          </div>
-        </li>
-        <li class="publication reveal">
-          <div class="pub-year">2024</div>
-          <div>
-            <h3>A third paper, conference proceeding, or technical note</h3>
-            <p class="authors"><strong>S. Klimenko</strong> et al.</p>
-            <p class="venue">Publication or conference · Example placeholder</p>
-            <div class="pub-links"><a href="#">PDF</a><a href="#">Data</a></div>
-          </div>
-        </li>
-      </ol>
-
-      <a class="button secondary" href="#">View full publication list</a>
     </section>
-
-    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="contact-copy reveal">
-        <p class="eyebrow">Get in touch</p>
-        <h2 id="contact-title">Let’s discuss research and collaboration.</h2>
-        <p>
-          <!-- EDIT: Replace this text and email address. -->
-          I welcome questions about my work, possible collaborations, and reproducible astrophysical modeling.
-        </p>
-        <a class="button primary" href="mailto:your.email@example.com">your.email@example.com</a>
-      </div>
-
-      <address class="contact-details reveal">
-        <div>
-          <span class="detail-label">Affiliation</span>
-          <strong>Your department or institute</strong>
-        </div>
-        <div>
-          <span class="detail-label">Location</span>
-          <strong>City, Country</strong>
-        </div>
-        <div>
-          <span class="detail-label">Profiles</span>
-          <strong><a href="https://github.com/slavaklimenko">GitHub</a> · <a href="#">ORCID</a> · <a href="#">ADS</a></strong>
-        </div>
-      </address>
-    </section>
-
-    <footer class="site-footer">
-      <p>© <span id="current-year"></span> Slava Klimenko. Built with semantic HTML, CSS, and a little JavaScript.</p>
-      <a href="#welcome">Back to top ↑</a>
-    </footer>
   </main>
+
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">&uarr;</button>
 </body>
 </html>

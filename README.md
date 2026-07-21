@@ -1,73 +1,64 @@
-# Slava Klimenko — GitHub Pages starter
+# Viacheslav Klimenko - GitHub Pages website
 
-A responsive, single-page academic website built with plain HTML, CSS, and JavaScript. It needs no package manager, build system, or framework.
+This is a responsive academic homepage built with plain HTML, CSS, and JavaScript. It has no framework, package manager, or build step.
 
-## Publish it on GitHub Pages
+The biography, research themes, appointments, education, observing programs, software description, and selected publications were prepared from the supplied CV and research summary. Publication author lists and DOI links were checked against current journal/preprint records.
 
-Your repository should be named:
+## Privacy note
+
+The original LaTeX files are **not included in the public site package**. The CV contains phone numbers, immigration information, and referees' private contact details. The website instead presents a public academic summary and offers an email link for requesting the full CV.
+
+## Publish on GitHub Pages
+
+The repository should be named exactly:
 
 ```text
 slavaklimenko.github.io
 ```
 
-1. Download and unzip this starter.
-2. Upload **the contents of the folder** to the root of the repository. `index.html` must be visible at the top level, not inside another folder.
-3. Commit the files to the `main` branch.
-4. Open **Settings → Pages**.
-5. Under **Build and deployment**, select:
+1. Upload **the contents of this folder** to the root of that repository. `index.html` must appear at the top level.
+2. Commit the files to the `main` branch.
+3. Open **Settings -> Pages**.
+4. Under **Build and deployment**, choose:
    - Source: **Deploy from a branch**
    - Branch: **main**
    - Folder: **/(root)**
-6. Save, then visit `https://slavaklimenko.github.io/` after GitHub finishes the deployment.
+5. Save and wait for the Pages deployment to finish.
+6. Open `https://slavaklimenko.github.io/`.
 
-## Customize the site
+## Replace the profile illustration
 
-Open `index.html` and search for `EDIT`. Those comments mark the main items to replace:
+Add a square photograph as:
 
-- biography and research description;
-- institution and location;
-- email address;
-- GitHub, ORCID, ADS, and Scholar links;
-- research projects and publication entries.
+```text
+assets/images/profile.jpg
+```
 
-### Replace the profile image
-
-1. Put your photo at `assets/img/profile.jpg`.
-2. In `index.html`, replace:
+Then replace this line in `index.html`:
 
 ```html
-<img class="portrait" src="assets/img/profile-placeholder.svg" ...>
+<img src="assets/images/profile-placeholder.svg" alt="Abstract profile illustration for Viacheslav Klimenko">
 ```
 
 with:
 
 ```html
-<img class="portrait" src="assets/img/profile.jpg" alt="Portrait of Slava Klimenko">
+<img src="assets/images/profile.jpg" alt="Portrait of Viacheslav Klimenko">
 ```
 
-A square image at least 600 × 600 pixels works best.
-
-### Change colors
-
-Edit the custom properties at the top of `assets/css/styles.css`, especially:
-
-```css
---navy-900: #0b2138;
---teal-600: #1b8c88;
---sand-100: #f6f2ea;
-```
+A square image at least 800 x 800 pixels is recommended.
 
 ## Preview locally
 
-From this folder, run:
+Run this command inside the site folder:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then open `http://localhost:8000/` in a browser.
+Then open `http://localhost:8000/`.
 
-## File structure
+## Main files
 
 ```text
 .
@@ -77,26 +68,17 @@ Then open `http://localhost:8000/` in a browser.
 ├── README.md
 ├── LICENSE
 └── assets
-    ├── css/styles.css
+    ├── css/style.css
     ├── js/main.js
-    └── img
-        ├── agn-jet.svg
-        ├── dust-extinction.svg
+    └── images
         ├── favicon.svg
-        ├── profile-placeholder.svg
-        └── spectrum.svg
+        └── profile-placeholder.svg
 ```
 
-## Troubleshooting a GitHub Pages 404
+## Before publishing
 
-Check that:
-
-- the repository is named exactly `slavaklimenko.github.io`;
-- `index.html` is in the publishing root;
-- Pages is set to `main` and `/(root)`;
-- the latest Pages deployment in the **Actions** tab completed successfully;
-- the site URL is `https://slavaklimenko.github.io/`.
+Review appointment dates, publication counts, current-program descriptions, and the institutional address whenever the CV is updated. Add only profile or repository links that you have verified.
 
 ## License
 
-The starter code and original SVG illustrations are available under the MIT License.
+The site code and original placeholder artwork are available under the MIT License.
