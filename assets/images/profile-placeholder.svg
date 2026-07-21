@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Viacheslav Klimenko profile illustration</title>
+  <desc id="desc">Abstract night-sky profile illustration for astrophysicist Viacheslav Klimenko.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#172641"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop offset="0" stop-color="#58d6c7" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#58d6c7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="620" cy="120" r="210" fill="url(#halo)"/>
+  <g fill="#ffffff" opacity="0.55">
+    <circle cx="70" cy="85" r="2"/><circle cx="160" cy="165" r="3"/><circle cx="285" cy="80" r="2"/>
+    <circle cx="420" cy="155" r="2"/><circle cx="720" cy="250" r="3"/><circle cx="650" cy="420" r="2"/>
+    <circle cx="110" cy="420" r="2"/><circle cx="300" cy="500" r="3"/><circle cx="520" cy="520" r="2"/>
+  </g>
+  <circle cx="400" cy="268" r="112" fill="#dff8f4" opacity="0.94"/>
+  <circle cx="400" cy="236" r="48" fill="#19334a"/>
+  <path d="M298 376c16-69 57-104 102-104s86 35 102 104" fill="#19334a"/>
+  <rect x="232" y="420" width="336" height="54" rx="27" fill="#58d6c7" opacity="0.9"/>
+  <text x="400" y="455" fill="#09211f" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">VIACHESLAV KLIMENKO</text>
+</svg>
