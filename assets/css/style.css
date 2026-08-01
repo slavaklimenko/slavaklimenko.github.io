@@ -275,6 +275,10 @@ section {
   letter-spacing: -0.04em;
 }
 
+.hero-bottom {
+  grid-column: 1 / -1;
+}
+
 .lead {
   max-width: 42rem;
   margin: 0;
