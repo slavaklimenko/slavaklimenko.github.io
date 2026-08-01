@@ -87,8 +87,8 @@ button:focus-visible {
 
 .identity h1,
 .identity .info {
-  font-size: 1.3rem;   /* Same size for all lines */
-  font-weight: 600;
+  font-size: 2rem;   /* Same size for all lines */
+  font-weight: 300;
   margin: 0;
   line-height: 1.4;
 }
