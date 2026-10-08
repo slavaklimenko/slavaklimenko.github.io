@@ -196,6 +196,7 @@ section + section { margin-top: 4.5rem; }
 .theme .chips { margin: 1.25rem 0 1.25rem; }
 .more { font-weight: 500; text-decoration: none; }
 .more::after { content: " →"; }
+.more-links { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
 
 .program-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.6rem; }
@@ -297,12 +298,20 @@ section + section { margin-top: 4.5rem; }
 .detail-fig { margin: 0 0 3rem; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 1.25rem; }
 .detail-fig.dark { background: #0b0f17; border-color: #0b0f17; max-width: 32rem; }
 .detail-fig figcaption { font-size: .88rem; color: var(--ink-3); margin-top: .8rem; }
+.fig-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin: 0 0 3rem; align-items: start; }
+.fig-pair .detail-fig { margin: 0; }
+.fig-pair img { width: 100%; height: auto; display: block; }
+@media (max-width: 760px) { .fig-pair { grid-template-columns: 1fr; } }
 .detail-fig.dark figcaption { color: #9aa5bb; }
 .article { max-width: var(--measure); }
 .article h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; }
 .article p, .article li { color: var(--ink-2); }
 .article ul { padding-left: 1.2rem; }
 .article li { margin-bottom: .35rem; }
+.article .refs { padding-left: 1.4rem; font-size: .92rem; }
+.article .refs li { margin-bottom: .7rem; scroll-margin-top: 1.5rem; }
+.article .refs li:target { background: color-mix(in srgb, var(--cool) 10%, transparent); border-radius: 4px; }
+.article .refs a { font-family: var(--mono); font-size: .8rem; margin-left: .3rem; }
 .pager { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
 .pager a { text-decoration: none; font-weight: 500; }
 
