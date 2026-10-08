@@ -17,8 +17,8 @@ The sidebar menu is repeated in each page. If you add a page, copy the `<nav cla
 
 ## To do before publishing
 
-1. **PDFs** — `assets/docs/Klimenko_CV.pdf` (public version: work-authorization lines and References block removed)
-   and `assets/docs/Klimenko_Research_Statement.pdf`. To update, replace the files keeping the same names.
+1. **PDF** — `assets/docs/Klimenko_CV.pdf` (public version: work-authorization lines and References block removed).
+   To update, replace the file keeping the same name.
    Never upload a CV that still contains the referees' contacts or visa details.
 2. **Life photos** — stored in `assets/images/life/` (resized to 1600 px). To add one, put the JPG there and copy a
    `<figure class="photo">` block in `life.html`; `data-cat` sets the filter (climbing, mountains, hiking, orienteering, water).
