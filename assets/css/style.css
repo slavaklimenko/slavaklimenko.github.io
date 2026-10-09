@@ -385,6 +385,7 @@ section + section { margin-top: 4.5rem; }
 
 /* ---------- Documents (CV / research statement) ---------- */
 .docs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.docs > .doc:only-child { grid-column: 1 / -1; max-width: 40rem; }
 .doc { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1rem 1.25rem; padding: 1.5rem; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); }
 .doc-icon { width: 3.25rem; height: 4rem; border-radius: 6px; background: var(--night); color: #e9a27c; display: grid; place-items: center; }
 .doc-icon svg { width: 1.6rem; height: 1.6rem; }
